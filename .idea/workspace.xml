@@ -5,32 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83b0ad85-2bb1-4245-ba82-2c76fc31aaaf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bjss/jsonregex/JsonArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bjss/jsonregex/JsonBoolean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bjss/jsonregex/JsonNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bjss/jsonregex/JsonNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bjss/jsonregex/JsonObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bjss/jsonregex/JsonPrimitive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bjss/jsonregex/JsonRegexGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bjss/jsonregex/JsonString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/bjss/jsonregex/JsonArrayTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/bjss/jsonregex/JsonBooleanTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/bjss/jsonregex/JsonNodeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/bjss/jsonregex/JsonNumberTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/bjss/jsonregex/JsonObjectTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/bjss/jsonregex/JsonStringTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/uk/co/djpiper28/jsonregex/JsonGeneratorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/JsonObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/JsonObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/JsonRegexGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/JsonRegexGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uk/co/djpiper28/jsonregex/JsonObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uk/co/djpiper28/jsonregex/JsonObjectTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,19 +45,22 @@
   <component name="MacroExpansionManager">
     <option name="directoryName" value="11k52tl5" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2Uf04o3uIBPW7a333uDY5HyzcEJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "onboarding.tips.debug.path": "C:/Users/Danny.Piper/Documents/JsonRegexGenerator/src/main/java/org/example/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Danny.Piper/Documents/JsonRegexGenerator/src/main/java/org/example/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.bjss.jsonregex" />
@@ -234,5 +216,8 @@
       <updated>1693315141768</updated>
     </task>
     <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/JsonRegexGenerator$Tests_in__uk_co_djpiper28_jsonregex_.ic" NAME="Tests in 'uk.co.djpiper28.jsonregex' Coverage Results" MODIFIED="1693320743423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

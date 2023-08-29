@@ -13,7 +13,7 @@ public class JsonObjectTest {
     @Test
     void testJsonObjectEmptyWhitespace() {
         JsonObject jsonObject = new JsonObject();
-        Assertions.assertTrue("  {   }    ".matches(jsonObject.getRegex()));
+        Assertions.assertTrue("{   }".matches(jsonObject.getRegex()));
     }
 
     @Test
@@ -25,7 +25,7 @@ public class JsonObjectTest {
     @Test
     void testJsonObjectOneItemWhitespace() {
         JsonObject jsonObject = new JsonObject().addNode(new JsonNode("test", new JsonNumber()));
-        Assertions.assertTrue("   {  \"test\"  :  123   }   ".matches(jsonObject.getRegex()));
+        Assertions.assertTrue("{  \"test\"  :  123   }".matches(jsonObject.getRegex()));
     }
 
     @Test
@@ -41,6 +41,6 @@ public class JsonObjectTest {
         JsonObject jsonObject = new JsonObject()
                 .addNode(new JsonNode("test", new JsonNumber()))
                 .addNode(new JsonNode("test2", new JsonBoolean()));
-        Assertions.assertTrue("  {  \"test\"  :  123  ,  \"test2\"  :  false  }  ".matches(jsonObject.getRegex()));
+        Assertions.assertTrue("{  \"test\"  :  123  ,  \"test2\"  :  false  }".matches(jsonObject.getRegex()));
     }
 }

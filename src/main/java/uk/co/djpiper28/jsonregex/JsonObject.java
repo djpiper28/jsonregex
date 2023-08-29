@@ -31,6 +31,6 @@ public class JsonObject implements JsonPrimitive {
 
     @Override
     public String getRegex() {
-        return "\\s*\\{\\s*" + this.getNodeRegexes() + "\\s*\\}\\s*";
+        return "\\{\\s*" + this.getNodeRegexes() + "\\s*\\}";
     }
 }

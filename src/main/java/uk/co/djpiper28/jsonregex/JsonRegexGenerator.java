@@ -11,7 +11,17 @@ public class JsonRegexGenerator {
         this.root = root;
     }
 
-    public String generateJson() {
-        return this.root.getRegex();
+    public String getRegex() {
+        return "\\s*" + this.root.getRegex() + "\\s*";
+    }
+
+    /**
+     * Esacpes a regex string, really useful if the regex string is being stored in JSON for example.
+     *
+     * @param regex regex string
+     * @return escaoed regex string
+     */
+    public static String escapeString(final String regex) {
+        return regex.replace("\\", "\\\\").replace("\"", "\\\"");
     }
 }
