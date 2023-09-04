@@ -43,4 +43,50 @@ public class JsonObjectTest {
                 .addNode(new JsonNode("test2", new JsonBoolean()));
         Assertions.assertTrue("{  \"test\"  :  123  ,  \"test2\"  :  false  }".matches(jsonObject.getRegex()));
     }
+
+    @Test
+    void testJsonObjectSingleOptional() {
+        JsonObject jsonObject = new JsonObject()
+                .addOptionalNode(new JsonNode("test", new JsonNumber()));
+        Assertions.assertTrue("{\"test\":123}".matches(jsonObject.getRegex()));
+        Assertions.assertTrue("{}".matches(jsonObject.getRegex()));
+    }
+
+    @Test
+    void testJsonObjectSingleOptionalWhitespace() {
+        JsonObject jsonObject = new JsonObject()
+                .addOptionalNode(new JsonNode("test", new JsonNumber()));
+        Assertions.assertTrue("{   \"test\"  :  123   }".matches(jsonObject.getRegex()));
+        Assertions.assertTrue("{   }".matches(jsonObject.getRegex()));
+    }
+
+    @Test
+    void testJsonObjectOptionalAfterRequied() {
+        JsonObject jsonObject = new JsonObject()
+                .addNode(new JsonNode("thing", new JsonNumber()))
+                .addOptionalNode(new JsonNode("test", new JsonNumber()));
+        Assertions.assertTrue("{\"thing\":123,\"test\":123}".matches(jsonObject.getRegex()));
+        Assertions.assertTrue("{\"thing\":123}".matches(jsonObject.getRegex()));
+    }
+
+    @Test
+    void testJsonObjectOptionalAfterRequiedWhitespace() {
+        JsonObject jsonObject = new JsonObject()
+                .addNode(new JsonNode("thing", new JsonNumber()))
+                .addOptionalNode(new JsonNode("test", new JsonNumber()));
+        Assertions.assertTrue("{  \"thing\"  :  123  ,  \"test\"  :  123  }".matches(jsonObject.getRegex()));
+        Assertions.assertTrue("{  \"thing\"  :  123  }".matches(jsonObject.getRegex()));
+    }
+
+    @Test
+    void testJsonObjectOptionalsAfterRequied() {
+        JsonObject jsonObject = new JsonObject()
+                .addNode(new JsonNode("thing", new JsonNumber()))
+                .addOptionalNode(new JsonNode("test", new JsonNumber()))
+                .addOptionalNode(new JsonNode("test2", new JsonNumber()));
+        Assertions.assertTrue("{\"thing\":123,\"test\":123,\"test2\":321}".matches(jsonObject.getRegex()));
+        Assertions.assertTrue("{\"thing\":123,\"test2\":123}".matches(jsonObject.getRegex()));
+        Assertions.assertTrue("{\"thing\":123,\"test\":123}".matches(jsonObject.getRegex()));
+        Assertions.assertTrue("{\"thing\":123}".matches(jsonObject.getRegex()));
+    }
 }

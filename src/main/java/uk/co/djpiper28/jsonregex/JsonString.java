@@ -3,6 +3,7 @@ package uk.co.djpiper28.jsonregex;
 public class JsonString implements JsonPrimitive {
 
     public static final String DEFAULT_PATTERN = "([^\"]|(\\\\\"))*";
+    public static final String GUID_PATTERN = "[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}";
     private final String pattern;
 
     /**

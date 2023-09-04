@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83b0ad85-2bb1-4245-ba82-2c76fc31aaaf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/uk/co/djpiper28/jsonregex/JsonGeneratorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/Example.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/JsonObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/JsonObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/JsonRegexGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/JsonRegexGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/JsonString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/JsonString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uk/co/djpiper28/jsonregex/JsonGeneratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uk/co/djpiper28/jsonregex/JsonGeneratorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/uk/co/djpiper28/jsonregex/JsonObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uk/co/djpiper28/jsonregex/JsonObjectTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +69,20 @@
       <recent name="com.bjss.jsonregex" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'uk.co.djpiper28.jsonregex'">
+  <component name="RunManager" selected="Application.Example">
+    <configuration name="Example" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="uk.co.djpiper28.jsonregex.Example" />
+      <module name="JsonRegexGenerator.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uk.co.djpiper28.jsonregex.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JsonArrayTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -81,30 +97,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;com.bjss.jsonregex.JsonArrayTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>true</ForceTestExec>
-      <method v="2" />
-    </configuration>
-    <configuration name="JsonBooleanTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.bjss.jsonregex.JsonBooleanTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -187,22 +179,21 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration default="true" type="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <option name="AUTO_RESTART" value="false" />
+    <configuration default="true" type="aws.lambda" factoryName="Remote">
+      <option name="credentialProviderId" />
+      <option name="regionId" />
+      <option name="functionName" />
+      <option name="input" />
+      <option name="inputIsFile" value="false" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Tests in 'uk.co.djpiper28.jsonregex'" />
+        <item itemvalue="Application.Example" />
         <item itemvalue="Gradle.Tests in 'com.bjss.jsonregex'" />
         <item itemvalue="Gradle.JsonObjectTest.testJsonObjectManyItems" />
         <item itemvalue="Gradle.JsonArrayTest" />
-        <item itemvalue="Gradle.JsonBooleanTest" />
       </list>
     </recent_temporary>
   </component>

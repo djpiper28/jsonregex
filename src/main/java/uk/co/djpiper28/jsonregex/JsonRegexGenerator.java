@@ -11,10 +11,6 @@ public class JsonRegexGenerator {
         this.root = root;
     }
 
-    public String getRegex() {
-        return "\\s*" + this.root.getRegex() + "\\s*";
-    }
-
     /**
      * Esacpes a regex string, really useful if the regex string is being stored in JSON for example.
      *
@@ -23,5 +19,9 @@ public class JsonRegexGenerator {
      */
     public static String escapeString(final String regex) {
         return regex.replace("\\", "\\\\").replace("\"", "\\\"");
+    }
+
+    public String getRegex() {
+        return "\\s*" + this.root.getRegex() + "\\s*";
     }
 }
