@@ -27,4 +27,16 @@ public class JsonArrayTest {
         JsonArray jsonArray = new JsonArray(new JsonNumber());
         Assertions.assertTrue("[     123   ,      -123     ,   123.123 ,   -123.123         ]".matches(jsonArray.getRegex()));
     }
+
+    @Test
+    void testEmptyArray() {
+        JsonArray jsonArray = new JsonArray(new JsonNumber());
+        Assertions.assertTrue("[]".matches(jsonArray.getRegex()));
+    }
+
+    @Test
+    void testEmptyArrayWhitespace() {
+        JsonArray jsonArray = new JsonArray(new JsonNumber());
+        Assertions.assertTrue("[         ]".matches(jsonArray.getRegex()));
+    }
 }

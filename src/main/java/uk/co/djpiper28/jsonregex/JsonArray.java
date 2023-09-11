@@ -12,6 +12,6 @@ public class JsonArray implements JsonPrimitive {
 
     @Override
     public String getRegex() {
-        return "\\[\\s*" + childrenFormat.getRegex() + "(\\s*,\\s*" + childrenFormat.getRegex() + "\\s*)*" + "\\s*\\]";
+        return "\\[\\s*(" + childrenFormat.getRegex() + "(\\s*,\\s*" + childrenFormat.getRegex() + "\\s*)*" + ")?\\s*\\]";
     }
 }
