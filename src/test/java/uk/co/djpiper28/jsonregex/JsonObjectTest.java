@@ -34,6 +34,7 @@ public class JsonObjectTest {
                 .addNode(new JsonNode("test", new JsonNumber()))
                 .addNode(new JsonNode("test2", new JsonBoolean()));
         Assertions.assertTrue("{\"test\":123,\"test2\":false}".matches(jsonObject.getRegex()));
+        Assertions.assertTrue("{\"test2\":false,\"test\":132}".matches(jsonObject.getRegex()));
     }
 
     @Test
@@ -61,16 +62,17 @@ public class JsonObjectTest {
     }
 
     @Test
-    void testJsonObjectOptionalAfterRequied() {
+    void testJsonObjectOptionalAfterRequired() {
         JsonObject jsonObject = new JsonObject()
                 .addNode(new JsonNode("thing", new JsonNumber()))
                 .addNode(new JsonNode("test", new JsonNumber(), true));
         Assertions.assertTrue("{\"thing\":123,\"test\":123}".matches(jsonObject.getRegex()));
+        Assertions.assertTrue("{\"test\":123,\"thing\":123}".matches(jsonObject.getRegex()));
         Assertions.assertTrue("{\"thing\":123}".matches(jsonObject.getRegex()));
     }
 
     @Test
-    void testJsonObjectOptionalAfterRequiedWhitespace() {
+    void testJsonObjectOptionalAfterRequiredWhitespace() {
         JsonObject jsonObject = new JsonObject()
                 .addNode(new JsonNode("thing", new JsonNumber(), false))
                 .addNode(new JsonNode("test", new JsonNumber(), true));
@@ -79,14 +81,24 @@ public class JsonObjectTest {
     }
 
     @Test
-    void testJsonObjectOptionalsAfterRequied() {
+    void testJsonObjectOptionalsAfterRequired() {
         JsonObject jsonObject = new JsonObject()
                 .addNode(new JsonNode("thing", new JsonNumber()))
-                .addNode(new JsonNode("test", new JsonNumber(), false))
+                .addNode(new JsonNode("test", new JsonNumber()))
                 .addNode(new JsonNode("test2", new JsonNumber(), true));
         Assertions.assertTrue("{\"thing\":123,\"test\":123,\"test2\":321}".matches(jsonObject.getRegex()));
-        Assertions.assertTrue("{\"thing\":123,\"test2\":123}".matches(jsonObject.getRegex()));
+        Assertions.assertTrue("{\"test\":123,\"thing\":123}".matches(jsonObject.getRegex()));
         Assertions.assertTrue("{\"thing\":123,\"test\":123}".matches(jsonObject.getRegex()));
-        Assertions.assertTrue("{\"thing\":123}".matches(jsonObject.getRegex()));
+    }
+
+    @Test
+    void testSingleOptionalNode() {
+        final String regex = new JsonRegexGenerator(
+                new JsonObject()
+                        .addNode(new JsonNode("code", new JsonString("\\d{6}"), true))
+        ).getRegex();
+
+        Assertions.assertTrue("{}".matches(regex));
+        Assertions.assertTrue("{\"code\":\"123456\"}".matches(regex));
     }
 }

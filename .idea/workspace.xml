@@ -7,9 +7,7 @@
     <list default="true" id="83b0ad85-2bb1-4245-ba82-2c76fc31aaaf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/Example.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/JsonNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/JsonNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/JsonObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/JsonObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/JsonString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/JsonString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/uk/co/djpiper28/jsonregex/JsonObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uk/co/djpiper28/jsonregex/JsonObjectTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +103,7 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="JsonObjectTest.testJsonObjectManyItems" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="JsonObjectTest.testJsonObjectEmpty" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -118,7 +116,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.bjss.jsonregex.JsonObjectTest.testJsonObjectManyItems&quot;" />
+            <option value="&quot;uk.co.djpiper28.jsonregex.JsonObjectTest.testJsonObjectEmpty&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -177,13 +175,22 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
+    <configuration default="true" type="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <option name="AUTO_RESTART" value="false" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.JsonObjectTest" />
+        <item itemvalue="Gradle.JsonObjectTest.testJsonObjectEmpty" />
         <item itemvalue="Gradle.Tests in 'uk.co.djpiper28.jsonregex'" />
         <item itemvalue="Application.Example" />
         <item itemvalue="Gradle.Tests in 'com.bjss.jsonregex'" />
-        <item itemvalue="Gradle.JsonObjectTest.testJsonObjectManyItems" />
       </list>
     </recent_temporary>
   </component>
@@ -197,6 +204,17 @@
       <updated>1693315141768</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/JsonRegexGenerator$Tests_in__uk_co_djpiper28_jsonregex_.ic" NAME="Tests in 'uk.co.djpiper28.jsonregex' Coverage Results" MODIFIED="1693320743423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
