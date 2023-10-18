@@ -7,8 +7,6 @@
     <list default="true" id="83b0ad85-2bb1-4245-ba82-2c76fc31aaaf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/Example.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/JsonObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/JsonObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uk/co/djpiper28/jsonregex/JsonObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uk/co/djpiper28/jsonregex/JsonObjectTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +63,7 @@
       <recent name="com.bjss.jsonregex" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.JsonObjectTest">
+  <component name="RunManager" selected="Application.Example">
     <configuration name="Example" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="uk.co.djpiper28.jsonregex.Example" />
       <module name="JsonRegexGenerator.main" />
