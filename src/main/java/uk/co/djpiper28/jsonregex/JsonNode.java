@@ -6,10 +6,24 @@ package uk.co.djpiper28.jsonregex;
 public class JsonNode {
     private final String key;
     private final JsonPrimitive value;
+    private final boolean optional;
 
+    /**
+     * A mendatory field in the JSON object.
+     *
+     * @param key
+     * @param value
+     */
     public JsonNode(final String key, final JsonPrimitive value) {
         this.key = key;
         this.value = value;
+        this.optional = false;
+    }
+
+    public JsonNode(final String key, final JsonPrimitive value, final boolean optional) {
+        this.key = key;
+        this.value = value;
+        this.optional = optional;
     }
 
     /**
@@ -19,5 +33,14 @@ public class JsonNode {
      */
     public String getRegex() {
         return "\"" + this.key + "\"\\s*:\\s*(" + this.value.getRegex() + ")";
+    }
+
+
+    /**
+     * Used by the JSON Object as that needs to know if it can put a comma afterwards.
+     * @return
+     */
+    public boolean isOptional() {
+        return optional;
     }
 }

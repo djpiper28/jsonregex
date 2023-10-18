@@ -7,6 +7,10 @@
     <list default="true" id="83b0ad85-2bb1-4245-ba82-2c76fc31aaaf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/Example.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/JsonNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/JsonNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/JsonObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/JsonObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/JsonString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/co/djpiper28/jsonregex/JsonString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uk/co/djpiper28/jsonregex/JsonObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uk/co/djpiper28/jsonregex/JsonObjectTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +67,7 @@
       <recent name="com.bjss.jsonregex" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Example">
+  <component name="RunManager" selected="Gradle.JsonObjectTest">
     <configuration name="Example" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="uk.co.djpiper28.jsonregex.Example" />
       <module name="JsonRegexGenerator.main" />
@@ -77,7 +81,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JsonArrayTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="JsonObjectTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -90,7 +94,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.bjss.jsonregex.JsonArrayTest&quot;" />
+            <option value="&quot;uk.co.djpiper28.jsonregex.JsonObjectTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -175,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.JsonObjectTest" />
         <item itemvalue="Gradle.Tests in 'uk.co.djpiper28.jsonregex'" />
         <item itemvalue="Application.Example" />
         <item itemvalue="Gradle.Tests in 'com.bjss.jsonregex'" />
         <item itemvalue="Gradle.JsonObjectTest.testJsonObjectManyItems" />
-        <item itemvalue="Gradle.JsonArrayTest" />
       </list>
     </recent_temporary>
   </component>
